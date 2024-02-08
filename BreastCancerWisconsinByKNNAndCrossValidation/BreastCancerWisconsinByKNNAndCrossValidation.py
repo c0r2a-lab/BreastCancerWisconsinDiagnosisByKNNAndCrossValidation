@@ -50,6 +50,8 @@ MSE = [1 - x for x in cv_scores]
 optimal_k = neighbors[MSE.index(min(MSE))]
 print('The optimal number of neighbors is % d ' % optimal_k)
 
+
+# displays the graph for figuring out
 plt.figure(figsize = (10, 6))
 plt.plot(neighbors, MSE)
 plt.xlabel('Number of neighbors')
